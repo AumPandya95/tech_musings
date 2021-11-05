@@ -52,13 +52,21 @@ def replacer(arr):
     return positions_filled
 
 
-if __name__ == "__main__":
-    test_cases = int(input())
-    array_size = int(input())
-    array = list(map(int, input().strip().split()))
-    pos_arr = replacer(array)
+def get_sum(size_of_array, actual_array):
+    pos_arr = replacer(actual_array)
     # if pos_arr:
     #     min_sum = sum_replaced(pos_arr, array)
-    min_sum = sum(array)
-    print(array)
-    print(min_sum)
+    min_sum = sum(actual_array)
+    print(actual_array)
+
+    return min_sum
+
+
+if __name__ == "__main__":
+    test_cases = int(input())
+    for i, case in enumerate(test_cases):
+        array_size = int(input())
+        array = list(map(int, input().strip().split()))
+
+        min_sum = get_sum(array_size, array)
+        print(f"Sum for test case {i+1} -> {min_sum}")
