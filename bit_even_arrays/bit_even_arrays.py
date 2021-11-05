@@ -1,6 +1,12 @@
+def binary(num, bin_num):
+    if num>=1:
+        binary(num//2, bin_num)
+    bin_num.append(num%2)
+
+
 def check_binary(num):
     binary_num = []
-    # Convert num to binary
+    binary(num, binary_num)
     print(binary_num)
     for i, ele in enumerate(binary_num[::-1]):
         # print('len', len(binary_num))
