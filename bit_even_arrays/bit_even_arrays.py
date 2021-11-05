@@ -64,9 +64,9 @@ def get_sum(size_of_array, actual_array):
 
 if __name__ == "__main__":
     test_cases = int(input())
-    for i, case in enumerate(test_cases):
+    for case in range(test_cases):
         array_size = int(input())
         array = list(map(int, input().strip().split()))
 
         min_sum = get_sum(array_size, array)
-        print(f"Sum for test case {i+1} -> {min_sum}")
+        print(f"Sum for test case {case+1} -> {min_sum}")
