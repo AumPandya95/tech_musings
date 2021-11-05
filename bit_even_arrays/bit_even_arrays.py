@@ -1,12 +1,12 @@
-    """
-    Step 1: Parse through the given array and find "-1"
-    Step 2: Check previous element and find the next even number if previous element is odd else start with the same 
-     number.
-    Step 3: Generate binary equivalent of decimal numbers
-    Step 4: Check if odd positions have non-zero numbers; if yes then check for binary of the next even number
-    Step 5: Replace the appropriate decimal number in the array (for which binary conditions are satisfied)
-    Step 6: Find the sum of the final array
-    """
+"""
+Step 1: Parse through the given array and find "-1"
+Step 2: Check previous element and find the next even number if previous element is odd else start with the same 
+    number.
+Step 3: Generate binary equivalent of decimal numbers
+Step 4: Check if odd positions have non-zero numbers; if yes then check for binary of the next even number
+Step 5: Replace the appropriate decimal number in the array (for which binary conditions are satisfied)
+Step 6: Find the sum of the final array
+"""
 
 def binary(num, bin_num):
     if num>=1:
