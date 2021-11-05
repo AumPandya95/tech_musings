@@ -57,7 +57,7 @@ def get_sum(size_of_array, actual_array):
     # if pos_arr:
     #     min_sum = sum_replaced(pos_arr, array)
     min_sum = sum(actual_array)
-    print(actual_array)
+    print(f"Final Array -> {actual_array}")
 
     return min_sum
 
