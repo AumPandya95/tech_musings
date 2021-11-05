@@ -17,7 +17,7 @@ def binary(num, bin_num):
 def check_binary(num):
     binary_num = []
     binary(num, binary_num)
-    print(binary_num)
+    # print(binary_num)
     for i, ele in enumerate(binary_num[::-1]):
         # print('len', len(binary_num))
         if i >= len(binary_num) - 1:
